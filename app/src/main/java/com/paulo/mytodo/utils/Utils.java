@@ -60,6 +60,11 @@ public class Utils {
     }
     public  static String hour(){
         Date dt = new Date();
-        return (dt.getHours() +":" + dt.getMinutes());
+        String m;
+        if(dt.getMinutes() >= 1 && dt.getMinutes() <= 9)
+            m = "0"+dt.getTime();
+        else
+            m =  String.valueOf(dt.getMinutes());
+        return (dt.getHours() +":" + m);
     }
 }
