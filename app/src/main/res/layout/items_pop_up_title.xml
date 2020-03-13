@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/create_card_items"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/design_default_color_primary" />
+
+
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/hour"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/hour"
+            android:inputType="time"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/date"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/text_free"
+            android:background="@drawable/edit_text_border"
+            android:gravity="top|left"
+            android:hint="@string/text_free"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="4"
+            android:overScrollMode="always"
+            android:paddingLeft="10dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/close"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_close"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/save"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:background="@android:color/transparent"
+                android:text="@string/tbn_save"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

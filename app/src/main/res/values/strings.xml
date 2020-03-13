@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Todo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title">digite o titulo</string>
+    <string name="create_card">Criar Card</string>
+    <string name="tbn_save">salvar</string>
+    <string name="btn_close">fechar</string>
+    <string name="create_card_items">Items do card</string>
+    <string name="hour">Que horas</string>
+    <string name="date">qual a data</string>
+    <string name="text_free">texto livre</string>
+    <string name="qtd">quantidade</string>
+    <string name="value">valor</string>
+    <string name="tbn_yes">Sim</string>
+    <string name="footer_data_and_hour">Data e Hora serão preenchidas automaticamente se os campos estiverem vazio</string>
+</resources>
